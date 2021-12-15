@@ -1,6 +1,6 @@
 FROM node
-WORKDIR app
-COPY package.json packge.json
+WORKDIR /app
+COPY package.json package.json
 RUN npm install
 COPY . /app
 EXPOSE 6000
